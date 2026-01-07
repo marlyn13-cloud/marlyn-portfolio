@@ -23,14 +23,14 @@ function autoSummarizePortfolio() {
 }
 function downloadResume() {
   const link = document.createElement("a");
-  link.href = "Marlyn Grullon Resume.pdf";
-  link.download = "Marlyn Grullon Resume.pdf";
+  link.href = "resume.pdf";
+  link.download = "resume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 }
 function openResume() {
-  window.open("Marlyn Grullon Resume.pdf", "_blank", "noopener");
+  window.open("resume.pdf", "_blank", "noopener");
 }
 
 
