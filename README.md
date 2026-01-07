@@ -37,15 +37,6 @@ This repository hosts the source code for my interactive web-based e-portfolio, 
 | JavaScript       | Action handling                 |
 |Logistic Regression|
 
-🚀 Quick Setup (Local Development)
-bash
-# Clone the repo
-git clone https://github.com/marlyn13-cloud/marlyn-portfolio.git
-cd marlyn-portfolio
-
-# Open index.html in browser
-# OR use Live Server extension in VS Code
-
 ---
 
 ## Usage
