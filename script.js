@@ -30,7 +30,8 @@ function downloadResume() {
   document.body.removeChild(link);
 }
 function openResume() {
-  window.open("resume.pdf", "_blank", "noopener");
+  const url = `${window.location.origin}${window.location.pathname}resume.pdf`;
+  window.open(url, "_blank", "noopener");
 }
 
 
