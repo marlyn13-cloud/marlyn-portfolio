@@ -1,5 +1,5 @@
 # Marlyn Grullon Portfolio
-This repository hosts the source code for my interactive web-based e-portfolio, built with HTML and CSS, which showcases my background as a Computer Science undergraduate specializing in cybersecurity and artificial intelligence.
+This repository hosts the source code for my interactive web-based e-portfolio, built with HTML, CSS, and JavaScript, which showcases my background as a Computer Science undergraduate specializing in cybersecurity and artificial intelligence.
 
 ---
 
@@ -16,10 +16,10 @@ This repository hosts the source code for my interactive web-based e-portfolio, 
   Comparative study on AI-generated vs. human-written reviews, evaluating clarity, relevance, and authenticity.
 
 - **Certifications**  
-  Badges in Information Technology Fundamentals, Cloud Computing Fundamentals, and Artificial Intelligence Fundamentals.
+  Badges in Information Technology Fundamentals and Artificial Intelligence Fundamentals.
 
 - **Technical Skills**  
-  - Programming: Python, HTML, CSS  
+  - Programming: Python, HTML, CSS
   - Cybersecurity: Phishing Detection, Content Analysis, Threat Identification  
   - AI: Machine Learning Fundamentals, Image Captioning, Text Summarization  
   - Tools & Libraries: Streamlit, scikit-learn, BeautifulSoup, NLTK
@@ -34,13 +34,24 @@ This repository hosts the source code for my interactive web-based e-portfolio, 
 | Technology       | Purpose                         |
 |------------------|---------------------------------|
 | HTML & CSS       | Layout, styling & animations    |
-| Font Awesome     | Icons & visual enhancements     |
+| JavaScript       | Action handling                 |
+|Logistic Regression|
 
+🚀 Quick Setup (Local Development)
+bash
+# Clone the repo
+git clone https://github.com/marlyn13-cloud/marlyn-portfolio.git
+cd marlyn-portfolio
+
+# Open index.html in browser
+# OR use Live Server extension in VS Code
 
 ---
 
 ## Usage
 click the following link to access the portfolio:
+
+© 2026 Marlyn Grullon. Built with AI & Cybersecurity technologies.
 
 https://marlyn13-cloud.github.io/marlyn-portfolio/
 ---
