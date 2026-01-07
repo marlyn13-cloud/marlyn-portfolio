@@ -1,274 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Marlyn Grullon | E-Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      font-size: 18px;
-      background: #0b0c10;
-      color: #c5c6c7;
-      margin: 0;
-      padding: 0;
-      scroll-behavior: smooth;
-    }
-    header {
-      background-color: #1f2833;
-      padding: 30px;
-      text-align: center;
-      animation: fadeIn 2s ease-in;
-    }
-    header h1 {
-      margin: 0;
-      color: #66fcf1;
-    }
-    nav {
-      text-align: center;
-      margin-top: 10px;
-    }
-    nav a {
-      margin: 0 15px;
-      color: #45a29e;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px;
-      opacity: 0;
-      animation: slideUp 1.2s ease forwards;
-    }
-    section:nth-of-type(2) {
-      animation-delay: 0.3s;
-    }
-    section:nth-of-type(3) {
-      animation-delay: 0.6s;
-    }
-    section:nth-of-type(4) {
-      animation-delay: 0.9s;
-    }
-    h2 {
-      color: #66fcf1;
-    }
-    .card {
-      background-color: #1f2833;
-      border-radius: 12px;
-      padding: 20px;
-      margin: 20px 0;
-      box-shadow: 0 4px 12px rgba(102, 252, 241, 0.1);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 6px 20px #ffd000;
-    }
-    footer {
-      text-align: center;
-      padding: 20px;
-      background-color: #1f2833;
-      color: #45a29e;
-      animation: fadeIn 2s ease-in;
-    }
-    .contact-item {
-      margin: 10px 0;
-    }
-    .contact-item i {
-      color: #66fcf1;
-      margin-right: 10px;
-    }
-    a {
-      color: #00eeff;
-    }
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    @keyframes slideUp {
-      from {
-        opacity: 0;
-        transform: translateY(30px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-        .fade-in {
-    opacity: 0;
-    animation: fadeInCard 1s ease forwards;
-  }
-  .fade-in-delayed {
-    opacity: 0;
-    animation: fadeInCard 1s ease forwards;
-    animation-delay: 0.5s;
-  }
-  @keyframes fadeInCard {
-    from {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  }
-  .card li {
-    transition: transform 0.3s ease;
-  }
-  .card li:hover {
-    transform: translateX(10px);
-    color: #ffffff;
-  }
-  </style>
+  <meta charset="UTF-8" />
+  <title>Marlyn Grullon | E-Portfolio </title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <meta name="description" content="Cybersecurity Analyst and AI Engineer portfolio specializing in machine learning, phishing detection, threat intelligence, and security analytics.">
+  <meta name="keywords" content="Cybersecurity Analyst, AI Engineer, Machine Learning, NLP, SOC Analyst, Threat Detection, Python">
+
 </head>
 
 <body>
-  <header>
+
+<!-- HERO TERMINAL -->
+<section class="hero">
+  <div class="terminal">
+    <p>> Booting AI Security System...</p>
+    <p>> Loading threat intelligence...</p>
+    <p class="success">✔ Access Granted</p>
     <h1>Marlyn Grullon</h1>
-    <p>Computer Science Undergraduate | Security & AI Enthusiast</p>
-    <nav>
-        <a href="#About Me">About</a>
-        <a href="#Projects">Projects</a>
-        <a href="#Experience">Experience</a>
-        <a href="#Certifications">Certifications</a>
-        <a href="#Skills">Skills</a>
-        <a href="#Contacts">Contact</a>
-    </nav>
-  </header>
-
- <section id="About Me">
-    <h2>About Me</h2>
-    <div class="card">
-      <p>I'm a Computer Science Undergraduate from Montclair State University with strong interests in cybersecurity and artificial intelligence. I enjoy building smart tools that solve real-world problems, from phishing detection to cybercrime monitoring. I'm bilingual in Spanish and English, and I bring a mix of technical expertise and excellent communication skills to every project.</p>
-    </div>
-  </section>
-
-  <section id="Projects">
-    <h2>Projects</h2>
-    <div class="card">
-      <h3>Phishing Email Analyzer</h3>
-      <p>A machine learning-powered tool designed to detect phishing emails. Features a user-friendly GUI for real-time email assessment. Useful for developers and security teams to integrate into broader cybersecurity frameworks.</p>
-      <p><a href="https://github.com/marlyn13-cloud/phishing-email-analyzer" target="_blank">View on GitHub</a></p>
-    </div>
-    <div class="card">
-      <h3>Cyber Crime AI Detector Dashboard</h3>
-      <p>Uses machine learning and computer vision to analyze cybersecurity datasets and generate summaries.</p>
-      <p><a href="https://github.com/marlyn13-cloud/AiCybercrime" target="_blank">View on GitHub</a></p>
-    </div>
-  </section>
-
-  <section id="Experience">
-    <h2>Research Experience</h2>
-    <div class="card">
-      <h3>AI Review Quality Analysis (Montclair State University)</h3>
-      <p><strong>Undergraduate Research</strong></p>
-      <p>Conducted a comparative study on the quality of AI-generated reviews versus human-written reviews across various domains. Designed evaluation criteria, collected datasets, and applied content analysis techniques to assess clarity, relevance, and authenticity. Findings contributed to broader discussions on the reliability and ethical use of AI in consumer review platforms.</p>
-    </div>
-  </section>
-
-  <section id="Certifications">
-    <h2>Certification Badges</h2>
-    <h1>Proof of Certifications</h1>
-    <div class="card">
-        <ul>
-            <li>
-            <p><strong>Information Technology Fundamentals</strong></p>
-            </li>   
-            <li>
-            <p><strong>Artificial Intelligence Fundamentals</strong></p>
-            </li>
-            <p><a href="https://github.com/marlyn13-cloud/Certified-Badges?tab=readme-ov-file" target="_blank">View on GitHub</a></p>
-        </ul>
-    </div>
+    <h2>AI • Cybersecurity • Data Intelligence</h2>
+    <button onclick="scrollToSection('about')">About Me</button>
+    <button onclick="scrollToSection('knowledge-radar')">Knowledge Radar</button>
+    <button onclick="scrollToSection('skills')">Explore Skills</button>
+    <button onclick="scrollToSection('projects')">Explore Projects</button>
+    <button onclick="scrollToSection('timeline')">Experience Timeline</button>
+    <button onclick="openResume()" class="download-btn">Open Resume</button>
+  </div>
 </section>
 
-  <section id="Skills">
-    <h2>Technical Skills</h2>
-    <div class="card">
-      <h3><i class="fas fa-code"></i> Programming Languages</h3>
-      <p><strong>Python</strong></p>
-      <div style="background:#f89c8c;
-      height:10px;
-      border-radius:5px;
-      width:100%;
-      margin-bottom:10px;">
-        <div style="width:90%;
-        height:10px;
-        background:#f75539;
-        border-radius:5px;">
-        </div>
-      </div>
-      <p><strong>HTML</strong></p>
-      <div style="background:#f89c8c;
-      height:10px;
-      border-radius:5px;
-      width:100%;
-      margin-bottom:10px;">
-        <div style="width:85%;
-        height:10px;
-        background:#f75539;
-        border-radius:5px;">
-        </div>
-      </div>
-      <p><strong>CSS</strong></p>
-      <div style="background:#f89c8c;
-      height:10px;
-      border-radius:5px;
-      width:100%;
-      margin-bottom:20px;">
-        <div style="width:80%;
-        height:10px;
-        background:#f75539;
-        border-radius:5px;">
-        </div>
-      </div>
+<section id="about">
+  <h2>About Me</h2>
+  <p>
+    I am an aspiring <strong>Cybersecurity Analyst</strong> and
+    <strong>AI Engineer</strong> College Student with hands-on experience in
+    <strong>artificial intelligence</strong>,
+    <strong>machine learning</strong>, and
+    <strong>information security</strong>.
+  </p>
 
-      <h3><i class="fas fa-shield-alt"></i> Cybersecurity</h3>
+  <p>
+    My work focuses on <strong>AI-driven threat detection</strong>,
+    <strong>phishing email analysis</strong>, and
+    <strong>security data intelligence</strong> using
+    <strong>Python</strong> and
+    <strong>machine learning models</strong>.
+  </p>
+
+  <p>
+    I have built projects involving
+    <strong>natural language processing (NLP)</strong>,
+    <strong>classification algorithms</strong>,
+    <strong>risk assessment</strong>, and
+    <strong>security monitoring</strong> to simulate
+    real-world <strong>SOC operations</strong>.
+  </p>
+</section>
+
+<!-- SKILLS RADAR -->
+<section class="skills chart-section" id="knowledge-radar">
+  <h2>Knowledge Radar Chart</h2>
+  <p>Drag Any Node For The Best View</p>
+  <div class="ats-skills">
+    Cybersecurity, Threat Detection, SOC Operations, Phishing Analysis,
+    Artificial Intelligence, Machine Learning, NLP, Python, Web Security
+  </div>
+
+  <svg id="skillGraph"></svg>
+</section>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+
+<section id="skills">
+  <h1>Technical Skills</h1>
+
+  <ul>
+    <li><strong>Cybersecurity:</strong> Threat Detection, SOC Operations, Incident Response, Phishing Analysis, Web Security</li>
+
+    <li><strong>Artificial Intelligence:</strong> Machine Learning, NLP, AI Prompting Training, Model Training</li>
+    
+    <li><strong>Programming:</strong> Python, JavaScript, HTML, CSS</li>
+    
+    <li><strong>Data & Tools:</strong> Scikit-learn, Linux, Git, GitHub, Data Visualization, Data Processing</li>
+  </ul>
+  <strong><h1>Certifications:</h1></strong> <a href="https://github.com/marlyn13-cloud/Certified-Badges" target="_blank" rel="noopener noreferrer">
+  View Certification Badges
+</a>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="projects">
+  <h2> Projects</h2>
+
+  <div class="project-card" onclick="openModal()">
+    <h3>Click Here For Projects</h3>
+  </div>
+</section>
+
+<!-- MODAL -->
+<div id="modal" class="modal">
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <h2>AI Phishing Detector</h2>
+    <p>
+      Trained an NLP model to detect phishing emails using Python
+      and Logistic Regression. Achieved high precision on
+      real-world datasets.
+    </p>
+    <a href ="https://github.com/marlyn13-cloud/phishing-email-analyzer"
+    target="_blank" rel="noopener noreferrer">View Github Repository
+  </a>
+  </div>
+  <div class="modal-content">
+    <span onclick="closeModal()" class="close">&times;</span>
+    <h2>CyberCrime AI Detector Dashboard</h2>
+    <p>
+      Developed a real-time dashboard for monitoring cyber threats
+      using Python. Integrated machine learning models for
+      threat prediction and visualization.
+    </p>
+    <a href ="https://github.com/marlyn13-cloud/AiCybercrime"
+    target="_blank" rel="noopener noreferrer">View Github Repository
+    </a>
+  </div>
+</div>
+
+<!-- TIMELINE -->
+<section id="timeline" class="timeline">
+  <h2> Experience Timeline</h2>
+  <div class="event">2025 – Cybersecurity Projects & AI Research</div>
+  <div class="event">2024 – Python, ML, Web Security</div>
+  <div class="event">
+    <p>
       <ul>
-        <li>Phishing Detection</li>
-        <li>Content Analysis</li>
-        <li>Threat Identification</li>
+        <li>Conducted hands-on cybersecurity and machine learning projects.</li>
+        <li>Applied AI techniques to phishing detection and threat intelligence.</li>
+        <li>Gained experience in SOC operations, security monitoring, and risk assessment.</li>
+        <li>Developed technical skills in Python, NLP, and data analysis.</li>
       </ul>
+    </p>
+</div>
+</section>
 
-      <h3><i class="fas fa-robot"></i> Artificial Intelligence</h3>
-      <ul>
-        <li>Machine Learning Fundamentals</li>
-        <li>Image Captioning</li>
-        <li>Text Summarization</li>
-      </ul>
+<!-- CHATBOT SUMMARY -->
+<div id="summary">
+  <span id="close">&times;</span>
+  <h1>Portfolio Summary</h1>
+  <p id="summary-text"></p>
+</div>
 
-      <h3><i class="fas fa-toolbox"></i> Tools & Libraries</h3>
-      <ul>
-        <li>Streamlit</li>
-        <li>scikit-learn</li>
-        <li>BeautifulSoup</li>
-        <li>NLTK</li>
-      </ul>
-    </div>
-  </section>
-
-  <section id="Contacts">
-    <h2>Contact</h2>
-    <div class="card">
-      <div class="contact-item">
-        <i class="fas fa-envelope"></i> <a href="mailto:marlyngrullon70@gmail.com">marlyngrullon70@gmail.com</a>
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-phone"></i> (862) 235-3556
-      </div>
-      <div class="contact-item">
-        <i class="fas fa-map-marker-alt"></i> Paterson, NJ
-      </div>
-      <div class="contact-item">
-        <i class="fab fa-github"></i> <a href="https://github.com/marlyn13-cloud" target="_blank">github.com/marlyn13-cloud</a>
-      </div>
-    </div>
-  </section>
-
-  <footer>
-    &copy; Marlyn Grullon | E-Portfolio
-  </footer>
+<script src="script.js"></script>
+<footer> 
+  <ul> 
+    <li> <p> Email: marlyngrullon70@gmail.com </p> </li>
+    <li> <p> Contact Number: 862-235-3556 </p> </li>
+    <li> <a href="https://github.com/marlyn13-cloud" target="_blank" rel="noopener noreferrer">View Github Profile</a> </li>
+  </ul>
+  <p>© 2025 Marlyn Grullon. All rights reserved.</p>
+   </footer>
 </body>
 </html>
