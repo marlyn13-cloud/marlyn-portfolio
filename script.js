@@ -1,6 +1,6 @@
 /* PORTFOLIO AUTO SUMMARY*/
 const portfolioSummary =
-  "Marlyn Grullon is an aspiring Cybersecurity Analyst and AI College Student with hands-on experience in artificial intelligence, machine learning, and information security. " +
+  "Marlyn Grullon is an aspiring Cybersecurity Analyst and AI College undergraduate with hands-on experience in artificial intelligence, machine learning, and information security. " +
   "Her portfolio focuses on AI-driven threat detection, phishing email analysis, and cybersecurity data intelligence using Python. " +
   "She has built machine learning and NLP-based projects, including an AI phishing email detection system using supervised classification techniques. " +
   "Her work demonstrates understanding of SOC operations, security monitoring, and risk assessment. " +
