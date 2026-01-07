@@ -23,8 +23,8 @@ function autoSummarizePortfolio() {
 }
 function downloadResume() {
   const link = document.createElement("a");
-  link.href = "Marlyn Grullon Resume.pdf";
-  link.download = "Marlyn Grullon Resume.pdf";
+  link.href = "Marlyn-Grullon-Resume.pdf";
+  link.download = "Marlyn-Grullon-Resume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
