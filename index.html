@@ -2,162 +2,294 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Marlyn Grullon | E-Portfolio </title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marlyn Grullon | Cybersecurity & AI Engineer</title>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  
   <link rel="stylesheet" href="style.css" />
-  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <meta name="description" content="Cybersecurity Analyst and AI Engineer portfolio specializing in machine learning, phishing detection, threat intelligence, and security analytics.">
-  <meta name="keywords" content="Cybersecurity Analyst, AI Engineer, Machine Learning, NLP, SOC Analyst, Threat Detection, Python">
-
 </head>
-
 <body>
 
-<!-- HERO TERMINAL -->
-<section class="hero">
-  <div class="terminal">
-    <p>> Booting AI Security System...</p>
-    <p>> Loading threat intelligence...</p>
-    <p class="success">✔ Access Granted</p>
-    <h1>Marlyn Grullon</h1>
-    <h2>AI • Cybersecurity • Data Intelligence</h2>
-    <button onclick="scrollToSection('about')">About Me</button>
-    <button onclick="scrollToSection('knowledge-radar')">Knowledge Radar</button>
-    <button onclick="scrollToSection('skills')">Explore Skills</button>
-    <button onclick="scrollToSection('projects')">Explore Projects</button>
-    <button onclick="scrollToSection('timeline')">Experience Timeline</button>
-    <button onclick="openResume()" class="download-btn">Open Resume</button>
-  </div>
-</section>
+  <div class="grid-bg"></div>
+  <div class="orb orb1"></div>
+  <div class="orb orb2"></div>
 
-<section id="about">
-  <h2>About Me</h2>
-  <p>
-    I am an aspiring <strong>Cybersecurity Analyst</strong> and
-    <strong>AI Engineer</strong> College undergraduate with hands-on experience in
-    <strong>artificial intelligence</strong>,
-    <strong>machine learning</strong>, and
-    <strong>information security</strong>.
-  </p>
-
-  <p>
-    My work focuses on <strong>AI-driven threat detection</strong>,
-    <strong>phishing email analysis</strong>, and
-    <strong>security data intelligence</strong> using
-    <strong>Python</strong> and
-    <strong>machine learning models</strong>.
-  </p>
-
-  <p>
-    I have built projects involving
-    <strong>natural language processing (NLP)</strong>,
-    <strong>classification algorithms</strong>,
-    <strong>risk assessments</strong>, and
-    <strong>security monitoring</strong> to simulate
-    real-world <strong>SOC operations</strong>.
-  </p>
-</section>
-
-<!-- SKILLS RADAR -->
-<section class="skills chart-section" id="knowledge-radar">
-  <h2>Knowledge Radar Chart</h2>
-  <p>Drag Any Node For The Best View</p>
-  <div class="ats-skills">
-    Cybersecurity, Threat Detection, SOC Operations, Phishing Analysis,
-    Artificial Intelligence, Machine Learning, NLP, Python, Web Security
-  </div>
-
-  <svg id="skillGraph"></svg>
-</section>
-
-<script src="https://d3js.org/d3.v7.min.js"></script>
-
-<section id="skills">
-  <h1>Technical Skills</h1>
-
-  <ul>
-    <li><strong>Cybersecurity:</strong> Threat Detection, SOC Operations, Incident Response, Phishing Analysis, Web Security</li>
-
-    <li><strong>Artificial Intelligence:</strong> Machine Learning, NLP, AI Prompting Training, Model Training</li>
+  <nav>
+    <div class="nav-logo">M<span>.</span>Grullon</div>
+    <ul class="nav-links">
+      <li><a href="#about">about</a></li>
+      <li><a href="#skills">skills</a></li>
+      <li><a href="#projects">projects</a></li>
+      <li><a href="#experience">experience</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
     
-    <li><strong>Programming:</strong> Python, JavaScript, HTML, CSS</li>
-    
-    <li><strong>Data & Tools:</strong> Scikit-learn, Linux, Git, GitHub, Data Visualization, Data Processing</li>
-  </ul>
-  <strong><h1>Certifications:</h1></strong> <a href="https://github.com/marlyn13-cloud/Certified-Badges" target="_blank" rel="noopener noreferrer">
-  View Certification Badges
-</a>
-</section>
+    <button onclick="openResume()" class="resume-btn" target="_blank" rel="noopener noreferrer">
+      Open Resume
+    </button>
+  </nav>
 
-<!-- PROJECTS -->
-<section id="projects" class="projects">
-  <h2> Projects</h2>
-
-  <div class="project-card" onclick="openModal()">
-    <h3>Click Here For Projects</h3>
-  </div>
-</section>
-
-<!-- MODAL -->
-<div id="modal" class="modal">
-  <div class="modal-content">
-    <span onclick="closeModal()" class="close">&times;</span>
-    <h2>AI Phishing Detector</h2>
-    <p>
-      Trained an NLP model to detect phishing emails using Python
-      and Logistic Regression. Achieved high precision on
-      real-world datasets.
+  <section id="hero">
+    <p class="hero-tag">AI · Cybersecurity</p>
+    <h1 class="hero-name">Marlyn<br/>Grullon</h1>
+    <p class="hero-title">Cybersecurity Analyst & AI Engineer</p>
+    <p class="hero-desc">
+      Undergraduate building AI-driven security systems — from phishing detectors to
+      real-time threat dashboards. Focused on the intersection of machine learning and
+      information security.
     </p>
-    <a href ="https://github.com/marlyn13-cloud/phishing-email-analyzer"
-    target="_blank" rel="noopener noreferrer">View Github Repository
-  </a>
-  </div>
-  <div class="modal-content">
-    <span onclick="closeModal()" class="close">&times;</span>
-    <h2>CyberCrime AI Detector Dashboard</h2>
-    <p>
-      Developed a real-time dashboard for monitoring cyber threats
-      using Python. Integrated machine learning models for
-      threat prediction and visualization.
-    </p>
-    <a href ="https://github.com/marlyn13-cloud/AiCybercrime"
-    target="_blank" rel="noopener noreferrer">View Github Repository
+    <div class="hero-ctas">
+      <a href="#projects" class="btn-primary">
+        View Projects
+        <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M1 7h12M7 1l6 6-6 6" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </a>
+      <a href="#contact" class="btn-ghost">Get In Touch</a>
+    </div>
+    <div class="scroll-hint">
+      <div class="scroll-line"></div>
+      scroll to explore
+    </div>
+  </section>
+
+  <section id="about">
+    <p class="section-label reveal">00 — About</p>
+    <h2 class="section-title reveal">Building at the edge of<br/>AI & Security</h2>
+    <div class="section-divider reveal"></div>
+    <div class="about-grid reveal">
+      <div class="about-text">
+        <p>
+          I'm an aspiring <strong>Cybersecurity Analyst</strong> and <strong>AI Engineer</strong> —
+          a college undergraduate with hands-on experience in artificial intelligence,
+          machine learning, and information security.
+        </p>
+        <p>
+          My work focuses on <strong>AI-driven threat detection</strong>,
+          <strong>phishing email analysis</strong>, and <strong>security data intelligence</strong>
+          using Python and machine learning models.
+        </p>
+        <p>
+          I've built projects involving <strong>NLP</strong>, <strong>classification algorithms</strong>,
+          <strong>risk assessments</strong>, and <strong>security monitoring</strong> to simulate
+          real-world SOC operations.
+        </p>
+      </div>
+      <div class="about-stats">
+        <div class="stat-card">
+          <div class="stat-num">2+</div>
+          <div class="stat-label">AI security projects deployed</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">NLP</div>
+          <div class="stat-label">Phishing detection models</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">SOC</div>
+          <div class="stat-label">Operations experience</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-num">ML</div>
+          <div class="stat-label">Real-time threat dashboards</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills">
+    <p class="section-label reveal">01 — Skills</p>
+    <h2 class="section-title reveal">Technical Expertise</h2>
+    <div class="section-divider reveal"></div>
+    <div class="skills-grid reveal">
+
+      <div class="skill-group">
+        <div class="skill-group-icon">🛡️</div>
+        <div class="skill-group-title">Cybersecurity</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Threat Detection</span>
+          <span class="skill-tag">SOC Operations</span>
+          <span class="skill-tag">Incident Response</span>
+          <span class="skill-tag">Phishing Analysis</span>
+          <span class="skill-tag">Web Security</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-icon">🤖</div>
+        <div class="skill-group-title">Artificial Intelligence</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Machine Learning</span>
+          <span class="skill-tag">NLP</span>
+          <span class="skill-tag">AI Prompting</span>
+          <span class="skill-tag">Model Training</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-icon">💻</div>
+        <div class="skill-group-title">Programming</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">HTML</span>
+          <span class="skill-tag">CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-group">
+        <div class="skill-group-icon">📊</div>
+        <div class="skill-group-title">Data & Tools</div>
+        <div class="skill-tags">
+          <span class="skill-tag">Scikit-learn</span>
+          <span class="skill-tag">Linux</span>
+          <span class="skill-tag">Git / GitHub</span>
+          <span class="skill-tag">Data Visualization</span>
+          <span class="skill-tag">Data Processing</span>
+        </div>
+      </div>
+
+    </div>
+    <a href="https://github.com/marlyn13-cloud/Certified-Badges" target="_blank" class="cert-link reveal">
+      <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1l1.8 3.6L13 5.3l-3 2.9.7 4.1L7 10.3 3.3 12.3l.7-4.1L1 5.3l4.2-.7L7 1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+      View Certification Badges →
     </a>
-  </div>
-</div>
+  </section>
 
-<!-- TIMELINE -->
-<section id="timeline" class="timeline">
-  <h2> Experience Timeline</h2>
-  <div class="event">2025 – Cybersecurity Projects & AI Research</div>
-  <div class="event">2024 – Python, ML, Web Security</div>
-  <div class="event">
-    <p>
-      <ul>
-        <li>Conducted hands-on cybersecurity and machine learning projects.</li>
-        <li>Applied AI techniques to phishing detection and threat intelligence.</li>
-        <li>Gained experience in SOC operations, security monitoring, and risk assessment.</li>
-        <li>Developed technical skills in Python, NLP, and data analysis.</li>
-      </ul>
-    </p>
-</div>
-</section>
+  <section id="projects">
+    <p class="section-label reveal">02 — Projects</p>
+    <h2 class="section-title reveal">Featured Work</h2>
+    <div class="section-divider reveal"></div>
+    <div class="projects-grid reveal">
 
-<!-- CHATBOT SUMMARY -->
-<div id="summary">
-  <span id="close">&times;</span>
-  <h1>Portfolio Summary</h1>
-  <p id="summary-text"></p>
-</div>
+      <div class="project-card">
+        <div class="project-num">PROJECT / 01</div>
+        <div class="project-title">ResilientCare.ai</div>
+        <p class="project-desc">
+          ResilientCare is an AI Driven Mental Health Coach which specializes in day to day conflicts, helping the user handle your emotions in any MICRO situation. 
+          ResilientCare is an intelligent, browser based therapist like agent designed specifically to help users process academic stress, academic burnout, and academic anxiety.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">JavaScript</span>
+          <span class="project-tag">Transformers.js</span>
+          <span class="project-tag">webassembly</span>
+          <span class="project-tag">NLP</span>
+          <span class="project-tag">Chatbot</span>
+          <span class="project-tag">data-visualization</span>
+          <span class="project-tag">sentiment-analysis</span>
+        </div>
+        <a href="https://github.com/marlyn13-cloud/ResilientCare" target="_blank" class="project-link">
+          View on GitHub →
+        </a>
+      </div>
 
-<script src="script.js"></script>
-<footer> 
-  <ul> 
-    <li> <p> Email: marlyngrullon70@gmail.com </p> </li>
-    <li> <p> Contact Number: 862-235-3556 </p> </li>
-    <li> <a href="https://github.com/marlyn13-cloud" target="_blank" rel="noopener noreferrer">View Github Profile</a> </li>
-  </ul>
-  <p>© 2025 Marlyn Grullon. All rights reserved.</p>
-   </footer>
+      <div class="project-card">
+        <div class="project-num">PROJECT / 02</div>
+        <div class="project-title">AI Phishing Detector</div>
+        <p class="project-desc">
+          Trained an NLP model to detect phishing emails using Python and Logistic Regression.
+          Achieved high precision on real-world datasets — simulating production-grade
+          email threat filtering.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">NLP</span>
+          <span class="project-tag">Logistic Regression</span>
+          <span class="project-tag">Scikit-learn</span>
+        </div>
+        <a href="https://github.com/marlyn13-cloud/phishing-email-analyzer" target="_blank" class="project-link">
+          View on GitHub →
+        </a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-num">PROJECT / 03</div>
+        <div class="project-title">CyberCrime AI Detector Dashboard</div>
+        <p class="project-desc">
+          Developed a real-time dashboard for monitoring cyber threats using Python.
+          Integrated machine learning models for threat prediction and visualization —
+          simulating a live SOC environment.
+        </p>
+        <div class="project-tags">
+          <span class="project-tag">Python</span>
+          <span class="project-tag">ML Models</span>
+          <span class="project-tag">Data Visualization</span>
+          <span class="project-tag">Real-time</span>
+        </div>
+        <a href="https://github.com/marlyn13-cloud/AiCybercrime" target="_blank" class="project-link">
+          View on GitHub →
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="experience">
+    <p class="section-label reveal">03 — Experience</p>
+    <h2 class="section-title reveal">Timeline</h2>
+    <div class="section-divider reveal"></div>
+    <div class="timeline reveal">
+
+      <div class="tl-item">
+        <div class="tl-year">2025</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-title">Cybersecurity Projects & AI Research</div>
+          <ul class="tl-bullets">
+            <li>Built AI-powered phishing email analyzer using NLP and classification models</li>
+            <li>Developed real-time cybercrime detection dashboard with ML threat prediction</li>
+            <li>Applied AI techniques across multiple security-focused research projects</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="tl-item">
+        <div class="tl-year">2024</div>
+        <div class="tl-dot"></div>
+        <div class="tl-content">
+          <div class="tl-title">Python · ML · Web Security</div>
+          <ul class="tl-bullets">
+            <li>Conducted hands-on cybersecurity and machine learning projects</li>
+            <li>Gained experience in SOC operations, security monitoring, and risk assessment</li>
+            <li>Developed technical skills in Python, NLP, and security data analysis</li>
+          </ul>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <p class="section-label reveal">04 — Contact</p>
+    <h2 class="section-title reveal">Let's Connect</h2>
+    <div class="section-divider reveal"></div>
+    <div class="contact-card reveal">
+      <div>
+        <div class="contact-heading">Open to opportunities.<br/>Let's talk.</div>
+        <p class="contact-sub">Currently looking for internships and entry-level roles in cybersecurity and AI.</p>
+      </div>
+      <div class="contact-links">
+        <a href="mailto:marlyngrullon70@gmail.com" class="contact-item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><rect x="1" y="3" width="14" height="10" rx="2" stroke="currentColor" stroke-width="1.2"/><path d="M1 5l7 5 7-5" stroke="currentColor" stroke-width="1.2"/></svg>
+          marlyngrullon70@gmail.com
+        </a>
+        <a href="tel:8622353556" class="contact-item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 2h3l1.5 3.5L6 7a9 9 0 003 3l1.5-1.5L14 10v3c0 .5-.5 1-1 1C5.5 14 2 7.5 2 3c0-.5.5-1 1-1z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>
+          862-235-3556
+        </a>
+        <a href="https://github.com/marlyn13-cloud" target="_blank" class="contact-item">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M8 1a7 7 0 00-2.213 13.638c.35.064.478-.152.478-.337 0-.166-.006-.606-.01-1.19-1.947.423-2.357-.938-2.357-.938-.318-.808-.777-1.023-.777-1.023-.635-.434.048-.425.048-.425.702.049 1.071.72 1.071.72.624 1.068 1.638.76 2.037.58.063-.45.244-.76.444-.934-1.554-.177-3.188-.777-3.188-3.46 0-.764.273-1.389.72-1.88-.072-.177-.312-.889.069-1.852 0 0 .587-.188 1.923.716A6.7 6.7 0 018 5.398c.595.003 1.193.08 1.754.236 1.334-.904 1.92-.716 1.92-.716.383.963.142 1.675.07 1.852.448.491.72 1.116.72 1.88 0 2.69-1.637 3.281-3.196 3.455.252.217.476.644.476 1.298 0 .937-.009 1.692-.009 1.922 0 .187.126.405.48.336A7.001 7.001 0 008 1z" fill="currentColor"/></svg>
+          github.com/marlyn13-cloud
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2025 Marlyn Grullon. All rights reserved.</span>
+    <span style="color: var(--border);">Built with HTML · CSS · JS</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
-
