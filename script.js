@@ -23,14 +23,14 @@ function autoSummarizePortfolio() {
 }
 function downloadResume() {
   const link = document.createElement("a");
-  link.href = "resume.pdf";
-  link.download = "resume.pdf";
+  link.href = "Resume/Resume.pdf";
+  link.download = "Resume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 }
 function openResume() {
-  const url = `${window.location.origin}${window.location.pathname}resume.pdf`;
+  const url = `${window.location.origin}${window.location.pathname}Resume.pdf`;
   window.open(url, "_blank", "noopener");
 }
 
