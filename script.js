@@ -25,15 +25,14 @@ window.addEventListener('scroll', () => {
 });
 function downloadResume() {
   const link = document.createElement("a");
-  link.href = "Resume/Resume.pdf";
+  link.href = "Resume.pdf";
   link.download = "Resume.pdf";
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
 }
 function openResume() {
-  const url = `${window.location.origin}${window.location.pathname}Resume.pdf`;
-  window.open(url, "_blank", "noopener");
+  window.open("Resume.pdf", "_blank", "noopener");
 }
 
 function openModal() {
