@@ -642,7 +642,9 @@ footer {
     gap: 2.5rem;
   }
 
-  .timeline::before { left: 0; }
+  .timeline::before { 
+    left: 0; 
+  }
   .tl-item { grid-template-columns: 1fr; gap: 0.5rem; }
   .tl-year { text-align: left; padding-right: 0; }
   .tl-dot { display: none; }
@@ -651,5 +653,7 @@ footer {
     grid-template-columns: 1fr;
     padding: 2rem;
   }
-  .contact-links { align-items: flex-start; }
+  .contact-links { 
+    align-items: flex-start; 
+  }
 }
