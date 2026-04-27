@@ -23,7 +23,7 @@ This repository hosts the source code for my interactive web-based e-portfolio, 
 - **Technical Skills**  
   - Programming: Python, JavaScript, HTML, CSS
   - Security Frameworks: Phishing Detection, Content Analysis, Threat Identification  
-  - AI: Machine Learning Fundamentals, Image Captioning, Text Summarization
+  - AI: Machine Learning Fundamentals, Image Captioning, Text Summarization, RAG Pipeline
   - Tools & Libraries: Transformers.js, LangChain.js, WebAssembly (WASM), Rivescript.js, Streamlit, scikit-learn, BeautifulSoup, NLTK, 
 
 - **Contact**  
