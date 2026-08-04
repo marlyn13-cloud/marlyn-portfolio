@@ -1,5 +1,5 @@
 # Marlyn Grullon Portfolio
-This repository hosts the source code for my interactive web-based e-portfolio, built with HTML, CSS, and JavaScript, which showcases my background as a Computer Science undergraduate specializing in Artificial Intelligence.
+This repository hosts the source code for my interactive web-based e-portfolio, built with HTML, CSS, and JavaScript, which showcases my background as a Computer Science undergraduate specializing in Artificial Intelligence and data analytics.
 
 ---
 
@@ -23,7 +23,7 @@ This repository hosts the source code for my interactive web-based e-portfolio, 
 - **Technical Skills**  
   - Programming: Python, JavaScript, HTML, CSS
   - Security Frameworks: Phishing Detection, Content Analysis, Threat Identification  
-  - AI: Machine Learning Fundamentals, Image Captioning, Text Summarization
+  - AI: Machine Learning Fundamentals, Image Captioning, Text Summarization, RAG Pipeline
   - Tools & Libraries: Transformers.js, LangChain.js, WebAssembly (WASM), Rivescript.js, Streamlit, scikit-learn, BeautifulSoup, NLTK, 
 
 - **Contact**  
